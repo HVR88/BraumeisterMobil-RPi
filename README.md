@@ -1,7 +1,9 @@
-# BMPi
+# BraumeisterMobil-RPi
 
 # Introduction
-This project uses a RPI zero to replace the Braumesiter wifi module. The bmpi hosts a webserver for the front-end and talks to the Braumeister over UART using AT+ commands.
+This project is the code base for a Raspberry Pi based alternative to the official Speidel Braumeistermobil WiFi adapter. It allows remote control of your Braumeister v2 controller and updating firmware.
+
+When the code is running on RPi, it hosts a webserver for the front-end and talks to the Braumeister over UART using AT+ commands.
 
 ## Features
  * Send commands to the BM
@@ -9,18 +11,20 @@ This project uses a RPI zero to replace the Braumesiter wifi module. The bmpi ho
 
 ## Parts
 
-### Parts required to make a cable
+### Parts required
 
-- USB to serial adapter (pl2303)
-    - https://core-electronics.com.au/usb-to-ttl-serial-uart-rs232-adaptor-pl2303hx.html
-- Connector
-    - https://au.rs-online.com/web/p/industrial-automation-circular-connectors/1152764/
+- Raspberry Pi Zero
+
+- Binder M9 5-pin Male Connector
+    - https://www.aliexpress.com/item/1005006439473181.html?spm=a2g0o.order_list.order_list_main.5.301a1802HjaNiU
+        - 1pc, Not shielded, 5P A-code, Male
+    - DO NOT BUY FROM HERE: https://au.rs-online.com/web/p/industrial-automation-circular-connectors/1152764/
 
 Note: Ensure that the USB to UART is set to 3.3V. For the core-electronics adapter listed above, remove the case of the USB to serial adapter and change it to 3.3v
 
-## Demo Circuit
+## RPi gpio wiring
 
-Rpi Pin               | Connector Pin
+RPi Pin               | Connector Pin
 --------------------- | ----------------------------
 TX (aka GPIO14)       | Pin 2 (TX)
 RX (aka GPIO15)       | Pin 3 (RX)
@@ -32,23 +36,7 @@ N/A                   | Pin 1 (Vcc)
 
 For normal operation, XCK does not need to be grounded
 
-## Upgrading the Braumeister firmware with a cable
-!!Make sure the USB adapter is set to 3.3v.
-The BM will enter bootloader when XCK is grounded ~~and Vcc is supplied (3.3v)~~ 
-
-Windows:
-1. Connect cable from PC to BM (XCK grounded ~~and Vcc supplied~~)
-2. Set the com port with: MODE COM7: baud=38400 parity=n data=8 dtr=off rts=off octs=off odsr=off
-3. Open SpeidelSoftwareUpdater-Windows.exe (can be downloaded from speidel.com)
-4. Select firmware
-5. Plug in BM mains (buttons on BM turn yellow)
-6. Press start update (buttons on BM turn red)
-7. When finished, buttons on BM turn green
-8. Unplug usb and mains
-
-
-
 ## License
 
-Licensed under the GNU Lesser General Public License.
+Licensed under the GNU Lesser General Public License. https://github.com/roguenorman/bmpi/
 https://www.gnu.org/licenses/lgpl.html
