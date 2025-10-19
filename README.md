@@ -18,9 +18,8 @@ When the code is running on RPi, it hosts a webserver for the front-end and talk
 - Binder M9 5-pin Male Connector
     - https://www.aliexpress.com/item/1005006439473181.html?spm=a2g0o.order_list.order_list_main.5.301a1802HjaNiU
         - 1pc, Not shielded, 5P A-code, Male
-    - DO NOT BUY FROM HERE: https://au.rs-online.com/web/p/industrial-automation-circular-connectors/1152764/
 
-Note: Ensure that the USB to UART is set to 3.3V. For the core-electronics adapter listed above, remove the case of the USB to serial adapter and change it to 3.3v
+    - DO NOT BUY FROM HERE: https://au.rs-online.com/web/p/industrial-automation-circular-connectors/1152764/
 
 ## RPi gpio wiring
 
