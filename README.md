@@ -11,8 +11,6 @@ When the code is running on RPi, it hosts a webserver for the front-end and talk
 
 ## Parts
 
-### Parts required
-
 - Raspberry Pi Zero
 
 - Binder M9 5-pin Male Connector
