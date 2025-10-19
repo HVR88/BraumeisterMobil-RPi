@@ -13,15 +13,15 @@ When the code is running on RPi, it hosts a webserver for the front-end and talk
 
 - Raspberry Pi Zero
 
-- Binder M9 5-pin Male Connector
+- Binder M9 5-pin Male connector and cable
     - https://www.aliexpress.com/item/1005006439473181.html?spm=a2g0o.order_list.order_list_main.5.301a1802HjaNiU
         - 1pc, Not shielded, 5P A-code, Male
 
     - DO NOT BUY FROM HERE: https://au.rs-online.com/web/p/industrial-automation-circular-connectors/1152764/
 
-## RPi gpio wiring
+## RPi GPIO wiring
 
-RPi Pin               | Connector Pin
+RPi GPIO Pin          | Connector Pin
 --------------------- | ----------------------------
 TX (aka GPIO14)       | Pin 2 (TX)
 RX (aka GPIO15)       | Pin 3 (RX)
