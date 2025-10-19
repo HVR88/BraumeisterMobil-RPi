@@ -35,5 +35,7 @@ For normal operation, XCK does not need to be grounded
 
 ## License
 
-Licensed under the GNU Lesser General Public License. https://github.com/roguenorman/bmpi/
+Licensed under the GNU Lesser General Public License. 
 https://www.gnu.org/licenses/lgpl.html
+
+Original project: https://github.com/roguenorman/bmpi/
